@@ -19,17 +19,4 @@ for (int i = 0; i < wordString.Length; i++)
         }
     }
 
-    if (!letterChecked)
-    {
-        for (int j = 0; j < wordString.Length; j++)
-        {
-            if (wordString[i] == wordString[j] && i != j)
-            {
-                repeatedChar[count] = wordString[i];
-                count++;
-            }
-        }
-    }
 }
-
-Console.WriteLine("Characters that are repeated: " + string.Join(" ", repeatedChar));
