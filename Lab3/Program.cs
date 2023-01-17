@@ -54,3 +54,25 @@ while (counter1 < listOfNumber1.Length && counter2 < listOfNumber2.Length)
     counter3++;
 }
 
+while (counter1 < listOfNumber1.Length)
+{
+    listOfResult[counter3] = listOfNumber1[counter1];
+    counter1++;
+    counter3++;
+}
+
+while (counter2 < listOfNumber2.Length)
+{
+    listOfResult[counter3] = listOfNumber2[counter2];
+    counter2++;
+    counter3++;
+}
+
+Console.WriteLine(" ");
+Console.Write("New Matrix { ");
+for (int i = 0; i < listOfResult.Length; i++)
+{
+    Console.Write(listOfResult[i] + " ");
+}
+Console.Write(" }");
+Console.WriteLine();
