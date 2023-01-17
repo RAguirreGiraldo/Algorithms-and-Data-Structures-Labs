@@ -7,5 +7,9 @@ int counter;
 
 for (int i = 0; i < listOfNumber.Length; i++)
 {
-    
+    counter = 0;
+    for (int j = 0; j < listOfNumber.Length; j++)
+    {
+       
+    }
 }
