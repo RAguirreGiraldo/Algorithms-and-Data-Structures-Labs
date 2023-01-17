@@ -90,8 +90,11 @@ string[] max = new string[0];
 
 for (int i = 0; i < wordsCompare.Length; i++)
 {
-    
+    if (wordsCompare[i].Length >= size)
+    {
+      
+    }
 }
 
-Console.WriteLine("The word most Longer is : " + max[0]);
+
 
