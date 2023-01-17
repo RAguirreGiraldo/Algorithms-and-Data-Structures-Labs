@@ -70,15 +70,19 @@ foreach (string word in individualWords)
 */
 
 /****************************  Third Exercise ***********************************************/
-
+Console.WriteLine(" Exercise #3 ");
 Console.WriteLine("Enter a phrase to be inverted : ");
+Console.WriteLine();
 string introString = Console.ReadLine();
+Console.WriteLine(" Press key to Continue ");
 
 char[] arrIntroString = introString.ToCharArray();
 Array.Reverse(arrIntroString);
 
 Console.WriteLine("The inverted phrase is  :");
 Console.WriteLine(arrIntroString);
+Console.WriteLine();
+Console.WriteLine(" Press key to Continue ");
 Console.WriteLine();
 Console.ReadKey();
 
@@ -113,4 +117,6 @@ for (int i = 0; i < wordsCompare.Length; i++)
     }
 }
 
+Console.WriteLine(" Exercise #4 ");
+Console.WriteLine();
 Console.WriteLine("The word most Longer is : " + max[0]);
