@@ -76,3 +76,8 @@ for (int i = 0; i < listOfResult.Length; i++)
 }
 Console.Write(" }");
 Console.WriteLine();
+
+/****** Excersice 3 *************/
+
+
+int[] InputReversible = { 3415 };
