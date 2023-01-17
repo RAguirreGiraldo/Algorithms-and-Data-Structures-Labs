@@ -64,6 +64,20 @@ foreach (string word in individualWords)
     if (word != null)
     {
         Console.WriteLine(word);
+        Console.WriteLine();
     }
 }
+
+/****************************  Third Exercise ***********************************************/
+
+Console.WriteLine("Enter a phrase to be inverted : ");
+string introString = Console.ReadLine();
+
+char[] arrIntroString = introString.ToCharArray();
+Array.Reverse(arrIntroString);
+
+Console.WriteLine("The inverted phrase is  :");
+Console.WriteLine(arrIntroString);
+Console.ReadKey();
+
 
