@@ -38,7 +38,7 @@ Console.WriteLine();
 */
 
 /****************************  Second Exercise ***********************************************/
-
+/*
 
 char[] SpaceCharacter = { ' ' };                                                                // Space character
 
@@ -67,6 +67,7 @@ foreach (string word in individualWords)
         Console.WriteLine();
     }
 }
+*/
 
 /****************************  Third Exercise ***********************************************/
 
@@ -78,6 +79,7 @@ Array.Reverse(arrIntroString);
 
 Console.WriteLine("The inverted phrase is  :");
 Console.WriteLine(arrIntroString);
+Console.WriteLine();
 Console.ReadKey();
 
 /****************************  Exercise Four ***********************************************/
@@ -92,9 +94,23 @@ for (int i = 0; i < wordsCompare.Length; i++)
 {
     if (wordsCompare[i].Length >= size)
     {
-      
+        size = wordsCompare[i].Length;
+        if (max.Length > 0 && max[max.Length - 1].Length == wordsCompare[i].Length)
+        {
+            string[] tempMax = new string[max.Length + 1];
+            for (int j = 0; j < max.Length; j++)
+            {
+                tempMax[j] = max[j];
+            }
+            tempMax[tempMax.Length - 1] = wordsCompare[i];
+            max = tempMax;
+        }
+        else
+        {
+            max = new string[1];
+            max[0] = wordsCompare[i];
+        }
     }
 }
 
-
-
+Console.WriteLine("The word most Longer is : " + max[0]);
