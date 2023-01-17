@@ -82,8 +82,16 @@ Console.ReadKey();
 
 /****************************  Exercise Four ***********************************************/
 
-string[] wordsLongest = divideString.Split(" ");
-int sizeOfString = 0;
+string showLongestWord = "Tiptoe through the tulips";
+
+string[] wordsCompare = showLongestWord.Split(" ");
+int size = 0;
 string[] max = new string[0];
 
+for (int i = 0; i < wordsCompare.Length; i++)
+{
+    
+}
+
+Console.WriteLine("The word most Longer is : " + max[0]);
 
