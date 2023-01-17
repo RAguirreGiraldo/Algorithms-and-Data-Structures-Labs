@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Lab3");
+﻿/*************  Lab 3  **********/
+
+/****** Excersice 1 *************/
+
