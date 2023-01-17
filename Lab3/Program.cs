@@ -40,6 +40,17 @@ Console.WriteLine(" ");
 
 while (counter1 < listOfNumber1.Length && counter2 < listOfNumber2.Length)
 {
-    
+    if (listOfNumber1[counter1] < listOfNumber2[counter2])
+    {
+        listOfResult[counter3] = listOfNumber1[counter1];
+        counter1++;
+    }
+    else
+    {
+        listOfResult[counter3] = listOfNumber2[counter2];
+        counter2++;
+    }
+
+    counter3++;
 }
 
