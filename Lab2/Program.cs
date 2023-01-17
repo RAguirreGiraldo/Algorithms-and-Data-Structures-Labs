@@ -80,4 +80,10 @@ Console.WriteLine("The inverted phrase is  :");
 Console.WriteLine(arrIntroString);
 Console.ReadKey();
 
+/****************************  Exercise Four ***********************************************/
+
+string[] wordsLongest = divideString.Split(" ");
+int sizeOfString = 0;
+string[] max = new string[0];
+
 
