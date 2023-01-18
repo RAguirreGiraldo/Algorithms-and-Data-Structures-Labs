@@ -80,4 +80,17 @@ Console.WriteLine();
 /****** Excersice 3 *************/
 
 
-int[] InputReversible = { 3415 };
+int[] reversedString = { 3415 };
+int resulStringreverse = 0;
+int lastNumberofstring = 0;
+
+while (reversedString[0] != 0)
+{
+    lastNumberofstring = reversedString[0] % 10;
+    resulStringreverse = resulStringreverse * 10 + lastNumberofstring;
+    reversedString[0] /= 10;
+}
+
+Console.WriteLine(" ");
+Console.WriteLine("The number to reverse is " + reversedString[0] + " inverted is " + resulStringreverse);
+
