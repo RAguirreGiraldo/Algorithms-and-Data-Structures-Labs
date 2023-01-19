@@ -24,3 +24,7 @@ for (int i = 0; i < 3; i++)
     dataListBack.Add(max);
 }
 
+for (int k = 0; k < 3; k++)
+{
+    Console.Write($"{dataListBack[k]} ");
+}
