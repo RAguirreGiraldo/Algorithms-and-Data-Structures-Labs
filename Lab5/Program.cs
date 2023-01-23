@@ -25,3 +25,9 @@ if (chooseOpcion  == 1)
         Console.WriteLine($"{song} added to your playlist.");
     }    
 }
+
+Console.WriteLine("list of reproduction: "); 
+foreach (string song in playlist)
+{
+    Console.WriteLine(song);
+}
