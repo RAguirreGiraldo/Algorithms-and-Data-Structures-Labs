@@ -2,32 +2,58 @@
 
 // Create a New Playlist
 Queue<string> playlist = new Queue<string>();
+int chooseOpcion;
 
-Console.WriteLine("Choose an option:");
-Console.WriteLine("1.Add a song to your playlist");
-Console.WriteLine("2. Play the next song in your playlist");
-Console.WriteLine("3. Skip the next song");
-Console.WriteLine("4. Rewind one song");
-Console.WriteLine("5. Exit");
-
-int chooseOpcion = int.Parse(Console.ReadLine());
-
-if (chooseOpcion  == 1)
+do
 {
-    Console.WriteLine("How Many Song do you want to add");
-    int numSongsadd = int.Parse(Console.ReadLine());
+    Console.WriteLine("Choose an option:");
+    Console.WriteLine("1.Add a song to your playlist");
+    Console.WriteLine("2. Play the next song in your playlist");
+    Console.WriteLine("3. Skip the next song");
+    Console.WriteLine("4. Rewind one song");
+    Console.WriteLine("5. Exit \n");
+    Console.WriteLine();
 
-    for (int i = 0; i < numSongsadd; i++)
+    chooseOpcion = int.Parse(Console.ReadLine());
+
+    if (chooseOpcion == 1)
     {
-        Console.WriteLine("Enter Song Name:");
-        string song = Console.ReadLine();
-        playlist.Enqueue(song);
-        Console.WriteLine($"{song} added to your playlist.");
-    }    
-}
+        Console.WriteLine("How Many Song do you want to add \n");
+        int numSongsadd = int.Parse(Console.ReadLine());
 
-Console.WriteLine("list of reproduction: "); 
-foreach (string song in playlist)
-{
-    Console.WriteLine(song);
-}
+        for (int i = 0; i < numSongsadd; i++)
+        {
+            Console.WriteLine("Enter Song Name: \n");
+            string song = Console.ReadLine();
+            playlist.Enqueue(song);
+            Console.WriteLine($"{song} added to your playlist. \n");
+        }
+    }
+
+    Console.WriteLine("list of reproduction: \n");
+    foreach (string song in playlist)
+    {
+        Console.WriteLine(song);
+    }
+
+    if (chooseOpcion == 2)
+    {
+        string firstSong = playlist.Dequeue();
+        Console.WriteLine("Now Playing Song 1 " + firstSong);
+
+        string nextSong = playlist.Peek();
+        Console.WriteLine("Next song in the Playlist is : " + nextSong);
+
+    }
+
+
+} while (chooseOpcion != 5);
+
+
+
+
+
+
+
+
+
