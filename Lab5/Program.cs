@@ -12,7 +12,6 @@ Console.WriteLine("5. Exit");
 
 int chooseOpcion = int.Parse(Console.ReadLine());
 
-// Validar la opción del usuario
 if (chooseOpcion  == 1)
 {
     Console.WriteLine("How Many Song do you want to add");
